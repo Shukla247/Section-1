@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type of CSSt</title>
+
+    <style>
+        h3{
+            text-decoration: underline;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .myclass{ 
+            color: blueviolet !important;
+            font-size: 50px;
+        }
+
+        #myid{
+            color:red;
+            letter-spacing: 5px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .class2{
+            color: blue;
+        }
+
+        .class1{
+            color: red;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 style="color: red; font: size 50px;"> Inline css is used to apply css individual tags only</h1>
+
+    <h3>
+        Internal css is used to apply css on entire page at once
+    </h3>
+
+    <h3 class="myclass">Name selector is used to select element by their tag Name</h3>
+
+    <p class="myclass" id="myid" style="color: chartreuse;">Class Selector is used to select element by their class name</p>
+
+    <p id="myid"> ID Selectors are used to select element uniquely by their class name</p>
+
+    <p class="class1 class2"> ID Selectors are used to select element uniquely by their class name</p>
+
+    <h1 class="external">external </h1>
+
+</body>
+</html>

@@ -12,7 +12,12 @@
 
     <form>
         <lable1>Full Name</lable1>
-        <input type="text">
+        <input type="text" required minlength="4">
+
+        <br><br>
+
+        <label for="password"></label>
+        <input type="password">
 
         <br><br>
         <label> Gender</label>
@@ -48,16 +53,26 @@
 
         <details>
             <summary>Terms & Conditions</summary>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nostrum natus. Obcaecati numquam
+            <p> Lorem ipsum <mark> dolor sit amet consectetur adipisicing elit.</mark> Labore, nostrum natus. Obcaecati numquam
                 expedita id fugiat ipsum quaerat ratione sunt error nostrum iure, accusantium, porro delectus officiis
                 suscipit dolor ipsam! Fugit, incidunt aut sint omnis veniam deserunt odio voluptatibus tenetur ducimus
                 inventore quaerat. Facere, veniam? Qui quibusdam laboriosam ipsam. Hic.</p>
         </details>
         <br><br>
+        <label for="image">Upload Passportsize Photo</label>
+        <input id="image" type="file" hidden>
+
+        <br><br>
+        <input type="checkbox">
+        <label for="">I accept Term & Conditions</label>
         
+        <br><br>
+        <button>SUBMIT</button> </html>
+
 
 
     </form>
+    
 </body>
 
 </html>
