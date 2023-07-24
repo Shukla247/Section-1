@@ -10,14 +10,16 @@
             display: grid;
             /*grid-template-columns: 200px 300px 150px;*/
             /*grid-template-columns: 2fr 4fr 3fr;*/
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows:1fr 1fr 1fr ;
+            column-gap: 5px;
+            row-gap: 20px;
+            /*grid-template-columns: repeat(4, 1fr); */
+            grid-template-columns: 2fr 5fr 3fr;
+            grid-template-rows:1fr 1fr 1fr;
             height: 100vh;
+            padding: 0 200px;
         }
 
-        
-
-        .Child{
+        .Child {
             border: 2px solid crimson;
             background-color: #ff7f98;
             border-radius: 10px;
@@ -26,17 +28,29 @@
 
 
 
-        @media screen and (max-width): 1200px {
-            .parent{ 
-                grid-template-colums: repeat(1fr, 1fr);
-        
+        @media screen and (max-width: 1200px)  {
+            .parent { 
+                grid-template-columns: 1fr, 1fr;
             }
         }
 
-        @media screen and (max-width): 800px {
+        @media screen and (max-width: 800px)  {
             .parent{ 
-                grid-template-colums: 100%;
+                grid-template-columns: 100%;
             }
+        }
+
+        @media screen and (max-width: 600px) {
+            .Child {
+                background-color: blueviolet;
+            }
+        }
+
+        input {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png')no-repeat scroll 7px 7px;
+            background-size: contain;
+            background-position: right;
+            padding-left: 20px;
         }
 
 
@@ -45,6 +59,7 @@
 </head>
 <body>
 
+    <input type="text">
     <div class="parent">
         <div class="Child">
             <h3>Child 1</h3>
@@ -64,10 +79,8 @@
         <div class="Child">
             <h3>Child 6</h3>
         </div>
+
     </div>
-    
-
-
 
 </body>
 </html>
